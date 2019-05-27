@@ -1,0 +1,7 @@
+myexe : aq12.o file1 file2 file3
+	gcc -o myexe aq12.o 
+
+aq12.o : aq12.c 
+	 gcc -c aq12.c -I
+
+

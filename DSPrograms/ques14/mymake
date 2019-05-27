@@ -1,0 +1,8 @@
+myexe : aq14.o aq14a.o
+	gcc -o myexe aq14.o aq14a.o
+
+aq14.o : aq14.c myheader14.h
+	 gcc -c aq14.c -I
+
+aq14a.o : aq14a.c myheader14.h
+	  gcc -c aq14a.c -I

@@ -1,0 +1,8 @@
+myexe : asques5.o functions.o
+	gcc -o myexe asques5.o functions.o
+
+asques5.o : asques5.c myheader.h
+	    gcc -c asques5.c -I
+
+functions.o : functions.c myheader.h
+	      gcc -c functions.c -I

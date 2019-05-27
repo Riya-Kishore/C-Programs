@@ -1,0 +1,7 @@
+myexe : qq11.o
+	gcc -o myexe qq11.o
+
+qq11.o : qq11.c myheader11.h
+	    gcc -c qq11.c -I
+
+

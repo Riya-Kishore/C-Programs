@@ -1,0 +1,8 @@
+myexe : q8.o aques8a.o
+	gcc -o myexe q8.o aques8a.o
+
+q8.o : q8.c myheader8.h
+	gcc -c q8.c -I
+
+aques8a.o : aques8a.c myheader8.h
+	    gcc -c aques8a.c -I

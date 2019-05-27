@@ -1,0 +1,8 @@
+myexe : aques15.o func15.o
+	gcc -o myexe aques15.o func15.o
+
+aques15.o : aques15.c myheader15.h
+	    gcc -c aques15.c -I
+
+func15.o : func15.c myheader15.h
+	    gcc -c func15.c -I

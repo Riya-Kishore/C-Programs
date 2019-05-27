@@ -1,0 +1,8 @@
+myexe : aques10.o function10.o
+	gcc -o myexe aques10.o function10.o
+
+aques10.o : aques10.c myheader10.h
+	    gcc -c aques10.c -I
+
+function10.o : function10.c myheader10.h
+	      gcc -c function10.c -I

@@ -1,0 +1,7 @@
+myexe : asque2.o 
+	gcc -o myexe asque2.o 
+
+asque2.o : asque2.c 
+	    gcc -c asque2 -I
+
+

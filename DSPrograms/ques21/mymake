@@ -1,0 +1,8 @@
+myexe : q21a.o func21a.o
+	gcc -o myexe q21a.o func21a.o
+
+q21a.o : q21a.c myheader21.h
+	 gcc -c q21a.c -I
+
+func21a.o : func21a.c myheader21.h
+	   gcc -c func21a.c -I

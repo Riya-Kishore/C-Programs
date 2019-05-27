@@ -1,0 +1,8 @@
+myexe : asques7.o function7.o
+	gcc -o myexe asques7.o function7.o
+
+asques7.o : asques7.c myheaderr.h
+	    gcc -c asques7.c -I
+
+function7.o : function7.c myheaderr.h
+	      gcc -c function7.c -I

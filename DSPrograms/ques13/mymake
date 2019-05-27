@@ -1,0 +1,8 @@
+myexe : ques13.o f13.o
+	gcc -o myexe ques13.o f13.o
+
+ques13.o : ques13.c myheader13.h
+	   gcc -c asques.c -I
+
+f13.o : f13.c myheader13.h
+	gcc -c f13.c -I

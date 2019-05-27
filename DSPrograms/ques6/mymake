@@ -1,0 +1,7 @@
+myexe : asques6.o 
+	gcc -o myexe asques6.o 
+
+asques6.o : asques6.c myheader6.h
+	    gcc -c asques6.c -I
+
+

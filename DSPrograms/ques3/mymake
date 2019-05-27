@@ -1,0 +1,7 @@
+myexe : asques3.o 
+	gcc -o myexe asques3.o 
+
+asques3.o : asques3.c 
+	    gcc -c asques3.c -I
+
+

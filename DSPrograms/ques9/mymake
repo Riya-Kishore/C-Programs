@@ -1,0 +1,8 @@
+myexe : q9.o func9.o
+	gcc -o myexe q9.o func9.o
+
+q9.o : q9.c myheader9.h
+	gcc -c q9.c -I
+
+func9.o : func9.c myheader9.h
+	      gcc -c func9.c -I

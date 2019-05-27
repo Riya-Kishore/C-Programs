@@ -1,0 +1,8 @@
+myexe : q17.o func17.o
+	gcc -o myexe q17.o func17.o
+
+q17.o : q17.c myheader17.h
+	 gcc -c q17.c -I
+
+func17.o : func17.c myheader17.h
+	   gcc -c func17.c -I

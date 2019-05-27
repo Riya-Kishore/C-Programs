@@ -1,0 +1,8 @@
+myexe : q23.o func23.o
+	gcc -o myexe q23.o func23.o
+
+q23.o : q23.c myheader23.h
+	 gcc -c q23.c -I
+
+func23.o : func23.c myheader23.h
+	   gcc -c func23.c -I
